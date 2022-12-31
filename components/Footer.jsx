@@ -7,11 +7,11 @@ import { footerVariants } from "../utils/motion";
 
 const Footer = () => (
   <motion.footer
-  variants={footerVariants}
-  initial="hidden"
-  whileInView="show"
-  className="sm:px-16 px-6 py-8 relative"
- >
+    variants={footerVariants}
+    initial="hidden"
+    whileInView="show"
+    className="sm:px-16 px-6 py-8 relative"
+  >
     <div className="footer-gradient" />
     <div className="2xl:max-w-[1280px] w-full mx-auto flex flex-col ">
       <div className="flex items-center justify-between flex-wrap gap-5">
@@ -41,12 +41,12 @@ const Footer = () => (
             Copyright © 2021 - 2022 Metaversus. All rights reserved.
           </p>
           <div className="flex gap-4">
-            {socials.map((social) =>(
+            {socials.map((social) => (
               <img
-              key={social.name}
-              src={social.url}
-              alt={social.name}
-              className="w-[24px] h-[24px] object-contain cursor-pointer"
+                key={social.name}
+                src={social.url}
+                alt={social.name}
+                className="w-[24px] h-[24px] object-contain cursor-pointer"
               />
             ))}
           </div>
